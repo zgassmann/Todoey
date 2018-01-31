@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeE-Mj-feO" id="bYZ-NN-STN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="UNv-SG-VIm" id="kEK-xe-yKd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="pIZ-fd-gt0"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="pIZ-fd-gt0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="js6-2E-ZNw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="UNv-SG-VIm" id="EFw-YO-xgJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcG-MT-YQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
